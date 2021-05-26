@@ -28,6 +28,11 @@ public double getNote_precedente() {
 public void setNote_precedente(double note_precedente) {
 	this.note_precedente = note_precedente;
 }
+@Override
+public String toString() {
+	return "Enfant [id=" + id + ", nom_complet=" + nom_complet + ", classe=" + classe + ", note_precedente="
+			+ note_precedente + "]";
+}
 
 
 
