@@ -15,17 +15,25 @@
       
     </div>
     <div class="col">
-      <form action="" method="post" class="row g-3">
+      <form action="AuthServlet" method="post" class="row g-3">
   <div class="col-auto">
     <label for="login" class="visually-hidden">login</label>
-    <input type="text" name="login"  class="form-control" id="login" placeholder="votre email ici">
+    <input type="text" required name="login"  class="form-control" id="login" placeholder="votre email ici">
   </div>
   <div class="col-auto">
     <label for="inputPassword2" class="visually-hidden">Password</label>
-    <input type="password" name="mdp" class="form-control" id="inputPassword2" placeholder="Password">
+    <input type="password" required name="mdp" class="form-control" id="inputPassword2" placeholder="Password">
   </div>
   <div class="col-auto">
     <button type="submit" class="btn btn-primary mb-3">Se connecter</button>
+    <br>
+    <% 
+    if(request.getAttribute("erreur")!=null)
+    {
+    String erreur=request.getAttribute("erreur").toString();
+    %>
+    <h3> <%=erreur %></h3>
+    <% } %>
   </div>
 </form>
     </div>
