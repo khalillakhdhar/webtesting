@@ -18,11 +18,11 @@
       <form action="" method="post" class="row g-3">
   <div class="col-auto">
     <label for="login" class="visually-hidden">login</label>
-    <input type="text"  class="form-control" id="login" placeholder="votre email ici">
+    <input type="text" name="login"  class="form-control" id="login" placeholder="votre email ici">
   </div>
   <div class="col-auto">
     <label for="inputPassword2" class="visually-hidden">Password</label>
-    <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+    <input type="password" name="mdp" class="form-control" id="inputPassword2" placeholder="Password">
   </div>
   <div class="col-auto">
     <button type="submit" class="btn btn-primary mb-3">Se connecter</button>
