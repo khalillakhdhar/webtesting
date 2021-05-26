@@ -28,4 +28,11 @@ public boolean verif_login(String login)
 	
 
 }
+public boolean verif_mdp(String mdp)
+{
+	return mdp.contains("orsys");
+	
+
+
+}
 }
