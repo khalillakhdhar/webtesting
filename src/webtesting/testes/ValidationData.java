@@ -22,5 +22,10 @@ public double verif_note(String note)
 	
 
 }
+public boolean verif_login(String login)
+{
+	return login.equals("admin");
+	
 
+}
 }
